@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <title>Odontologia | Contacto</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="menu">
+          <i class="fas fa-tooth"></i>
+          <span>Odontologia</span>
+
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="central.html">Nuestra Central</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content">
+        <h2 class="title">Contacto</h2>
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <p class="subtitle">Solicite su turno sin cargo</p>
+            <form action="post">
+              <p class="labelTextForm">
+                <label for="name">Nombre y Apellido (Requerido)</label>
+              </p>
+
+              <input type="text" name="name" class="inputTextForm" />
+
+              <p class="labelTextForm">
+                <label for="email">Email (Requerido)</label>
+              </p>
+              <input type="email" name="email" class="inputTextForm" />
+
+              <p class="labelTextForm"><label for="service">Servicio</label></p>
+              <select name="service" id="selectedOptionForm">
+                <option value="Protesis">Protesis</option>
+                <option value="Implantes">Implantes</option>
+                <option value="Extraccion">Extraccion</option>
+              </select>
+
+              <p class="labelTextForm">
+                <label for="consulta">Consulta (Requerido)</label>
+              </p>
+              <textarea
+                name="consulta"
+                cols="20"
+                rows="10"
+                id="inputTextAreaForm"
+              ></textarea>
+
+              <p>
+                <input type="submit" value="Enviar" id="buttonSubmitForm" />
+              </p>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <p>Tambien puedes consultarnos por nuestras redes sociales</p>
+            <ul>
+              <li>
+                <i class="fab fa-instagram">www.instagram.com/odontologia</i>
+              </li>
+              <li>
+                <i class="fab fa-facebook">www.facebook.com/odontologia</i>
+              </li>
+              <li><i class="fab fa-whatsapp">+54 9 1122334455</i></li>
+            </ul>
+
+            <p>O pasar por nuestro consultorio</p>
+            <div>
+              <i class="fas fa-map-marker-alt">Los Tulipanes 123 CABA</i>
+            </div>
+
+            <p>Horarios de atencion</p>
+            <p>Lunes a Viernes de 9 a 18hs</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-container">
+      <div id="footer-info">
+        <p>@ 2020 Serumy Derechos Reservados</p>
+      </div>
+      <div id="footer-logo">
+        <i class="fas fa-tooth"  style="color: aliceblue;"></i>
+      </div>
+      <div class="footer-social-links">
+        <ul>
+          <li>
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fab fa-facebook"></i>
+          </li>
+          <li><i class="fab fa-whatsapp"></i></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

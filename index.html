@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Odontologia | Inicio</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="logo">Seru<span>my.</span></a>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="index.html" onclick="toggleMenu();">Inicio</a></li>
+        <li><a href="#services" onclick="toggleMenu();">Servicios</a></li>
+        <li><a href="#staff">Staff</a></li>
+        <li><a href="pages/works.html">Trabajos</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contacto</a></li>
+      </ul>
+    </header>
+
+    <section class="banner" id="banner">
+      <div class="content">
+        <h2>Consultorio Odontologico</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          ullam expedita at quis eligendi, doloremque hic ipsa nobis optio, nisi
+          ad unde sit error perspiciatis illum placeat, incidunt veritatis
+          quisquam cum facilis aut?
+        </p>
+
+        <a href="pages/services.html" class="btnService">Nuestros Servicios</a>
+      </div>
+    </section>
+
+    <!-- ¿Porque no me toma los col de bootstrap? Preguntar al profesor porque desaparece la imagen al reducir la pantalla.. -->
+    <section class="about">
+      <div class="customRow">
+        <div class="col50">
+          <h2 class="titleAbout"><span>N</span>osotros</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+            quod voluptatem voluptas sunt, earum amet sint repellat quibusdam
+            illum inventore consequuntur perspiciatis magni laudantium nemo
+            labore cumque, ipsa enim asperiores est! Sequi ad blanditiis quod
+            dolorem rerum! Rem, minima, dolorum repudiandae exercitationem qui
+            fuga ad atque impedit nihil harum, est fugiat consequuntur! Cumque
+            error blanditiis aut odio atque vero! Voluptatibus odit eos.<br /><br />Dolorum
+            est tempora blanditiis ipsum molestiae eius libero vitae, harum
+            deleniti doloribus mollitia laborum voluptas labore alias corrupti
+            non molestias eligendi fugiat eveniet. Autem saepe quasi vel impedit
+            dolor neque? Porro quas veniam numquam ducimus doloribus omnis rem!
+          </p>
+        </div>
+
+        <div class="col50">
+          <div class="imgBx">
+            <img src="images/consultorio.jpg" alt="consultorio" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="titleService">
+        <h2 class="titleTextService"><span>S</span>ervicios</h2>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="card"
+            style="width: 22rem; background-color: #f1f1fa; padding: 15px"
+          >
+            <img
+              src="images/services/pexels-cedric-fauntleroy-4269355.jpg"
+              class="card-img-top imageSize"
+              alt="odontologiaGeneral"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Odontología General</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Mas Información</a>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 22rem; background-color: #f1f1fa; padding: 15px"
+          >
+            <img
+              src="images/services/pexels-anna-shvets-3845626.jpg"
+              class="card-img-top imageSize"
+              alt="implantes"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Implantes</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Mas Información</a>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 22rem; background-color: #f1f1fa; padding: 15px"
+          >
+            <img
+              src="images/services/pexels-cottonbro-6502306.jpg"
+              class="card-img-top imageSize"
+              alt="protesis"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Protesis</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Mas Información</a>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 22rem; background-color: #f1f1fa; padding: 15px"
+          >
+            <img
+              src="images/services/pexels-cottonbro-6528909.jpg"
+              class="card-img-top imageSize"
+              alt="ortodoncia"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ortodoncia</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Mas Información</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Trabajando con BEM -->
+    <!--Añadir href de redes sociales de cada integrante-->
+    <!-- SOLUCIONAR EL ERROR QUE NO SE VE EL H2-->
+    <section class="staff" id="staff">
+      <div class="staff__titleStaff">
+        <h2 class="staff__titleTextStaff"><span>S</span>taff</h2>
+      </div>
+      <div class="staff__card">
+        <img
+          src="images/staff/ian-dooley-d1UPkiFd04A-unsplash.jpg"
+          alt="people"
+          class="staff__img"
+        />
+        <div class="staff__info">
+          <h1 class="staff__title">Heading</h1>
+          <p class="staff__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
+            sunt!
+          </p>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+
+      <div class="staff__card">
+        <img
+          src="images/staff/ivana-cajina-_7LbC5J-jw4-unsplash.jpg"
+          alt="people"
+          class="staff__img"
+        />
+        <div class="staff__info">
+          <h1 class="staff__title">Heading</h1>
+          <p class="staff__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            laudantium!
+          </p>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+
+      <div class="staff__card">
+        <img
+          src="images/staff/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"
+          alt="people"
+          class="staff__img"
+        />
+        <div class="staff__info">
+          <h1 class="staff__title">Heading</h1>
+          <p class="staff__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ad!
+          </p>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+
+      <div class="staff__card">
+        <img
+          src="images/staff/pexels-andrea-piacquadio-774909.jpg"
+          alt="people"
+          class="staff__img"
+        />
+        <div class="staff__info">
+          <h1 class="staff__title">Heading</h1>
+          <p class="staff__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+            ducimus.
+          </p>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+
+      <div class="staff__card">
+        <img
+          src="images/staff/toa-heftiba-O3ymvT7Wf9U-unsplash.jpg"
+          alt="people"
+          class="staff__img"
+        />
+        <div class="staff__info">
+          <h1 class="staff__title">Heading</h1>
+          <p class="staff__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum,
+            ullam.
+          </p>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </section>
+
+    <!--Detectamos eventos con addEventListener, esto es JavaScript-->
+    <!--cuando detecta el scroll se ejecuta la funcion ("function")-->
+    <!--tiene varias opciones de parametros, no unicamente scroll,
+    tambien esta el evento clic, muy util-->
+    <!--la funcion agrega en el header si se desplaza una clase llamada sticky-->
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggleMenu() {
+        const toggleMenu = document.querySelector(".menuToggle");
+        const navigation = document.querySelector(".navigation");
+        toggleMenu.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

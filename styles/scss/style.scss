@@ -1,0 +1,539 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+//Agregando SASS
+$customRed: #ff0157;
+$lowercaseLetterSize: 2em;
+$lettersColor: #111;
+
+/*Clases y Id*/
+.title {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.subtitle {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.labelTextForm {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.inputTextForm {
+  margin-bottom: 20px;
+  margin-left: 100px;
+  height: 20px;
+  width: 350px;
+  border: solid 1px black;
+  background-color: #c4c4c4;
+}
+
+#selectedOptionForm {
+  margin-bottom: 20px;
+  margin-left: 100px;
+  height: 20px;
+  width: 350px;
+}
+
+#inputTextAreaForm {
+  margin-bottom: 20px;
+  margin-left: 100px;
+  height: 250px;
+  width: 350px;
+  border: solid 1px black;
+  background-color: #c4c4c4;
+}
+
+#buttonSubmitForm {
+  margin-bottom: 20px;
+  margin-left: 250px;
+  width: 60px;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Footer*/
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: #0c0c27;
+  padding: 20px;
+  border: 2px solid black;
+  flex-flow: row nowrap;
+}
+
+.footer-container #footer-info {
+  align-items: center;
+  align-self: center;
+  justify-self: flex-start;
+  color: blanchedalmond;
+  flex-basis: 300px;
+}
+
+.footer-container #footer-logo {
+  justify-self: center;
+  align-self: center;
+}
+
+.footer-container .footer-social-links {
+  justify-self: flex-end;
+  align-self: center;
+}
+
+.footer-social-links ul {
+  list-style: none;
+  color: blanchedalmond;
+}
+
+/*Index*/
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../images/dentists-choose-equipment-on-the-table.jpg");
+  background-size: cover;
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 5em;
+  color: #fff;
+}
+
+.banner .content p {
+  font-size: 1em;
+  color: #fff;
+}
+
+.btnService {
+  font-size: 1em;
+  color: #fff;
+  background: $customRed;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btnService:hover {
+  letter-spacing: 6px;
+}
+
+/*Header Index*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.sticky {
+  background: #fff;
+  padding: 10px 100px;
+  /*primer valor desplazamiento eje x -> valores negativos hacia izquierda
+    segundo valor desplazamiento eje y -> valores negativos hacia arriba
+    tercer valor es el valor del desenfoque
+    es posible añadir un cuarto valor que es la difusion
+    y por ultimo el color de la sombra*/
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: $lowercaseLetterSize;
+  text-decoration: none;
+}
+
+.sticky .logo {
+  color: $lettersColor;
+}
+
+header .logo span {
+  color: $customRed;
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+  top: 10px;
+}
+
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+.sticky .navigation li a {
+  color: $lettersColor;
+}
+
+header .navigation li a:hover {
+  color: $customRed;
+}
+
+.sticky .navigation li a:hover {
+  color: $customRed;
+}
+
+/*Nosotros*/
+.about {
+  padding: 100px;
+}
+
+.customRow {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.customRow .col50 {
+  position: relative;
+  width: 48%;
+}
+
+.titleAbout {
+  color: $lettersColor;
+  font-size: $lowercaseLetterSize;
+  font-weight: 300;
+}
+
+.titleAbout span {
+  color: $customRed;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.customRow .col50 .imgBx {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+.customRow .col50 .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Services*/
+.services {
+  padding: 100px;
+}
+
+.imgBx img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*titleService y titleAbout utilizan los mismos estilos, al ser clases lo ideal seria que tengan un nombre generico 
+como title y que se utilice la misma clase en ambas secciones del html, asi se optimiza el codigo*/
+.titleService {
+  color: $lettersColor;
+  font-size: $lowercaseLetterSize;
+  font-weight: 300;
+}
+
+.titleService span {
+  color: $customRed;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.imageSize {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.card {
+  margin: 10px 10px 0 10px;
+}
+
+/*Staff*/
+.staff {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px;
+  background-image: url("../../images/instruments/set-of-metal-medical-equipment-tools-for-dental-care-black.jpg");
+  background-size: cover;
+}
+
+.staff__titleStaff {
+  color: $lettersColor;
+  font-size: $lowercaseLetterSize;
+  font-weight: 300;
+}
+
+.staff__titleTextStaff span{
+  color: $customRed;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+
+.staff__card {
+  width: 280px;
+  height: 360px;
+  padding: 2rem 1rem;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+
+.staff__card:hover {
+  transform: translateY(20px);
+}
+
+.staff__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 176, 155, 0.5), rgba(150, 201, 61, 1));
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+}
+
+.staff__card:hover::before {
+   opacity: 1;
+}
+
+.staff__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*Al estar usando BEM puedo darme el lujo de poner unicamente ¿.staff__info?
+ GOOGLEAR, según lo que entendí, sí*/
+.staff__card .staff__info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+
+.staff__card:hover .staff__info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/*Cambiar tamaños de letras*/
+.staff__title {
+  margin: 0;
+}
+
+.staff__title {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/*Works*/
+.grid-item {
+  font-size: 3rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+  .tall {
+    grid-row: span 2;
+  }
+}
+
+#works {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, black 25%, #114f5d 100%);
+  padding: 10px;
+}
+
+#titleWork {
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+  font-size: 2em;
+}
+
+//MEDIAQUERY INDEX
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 10px 20px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    width: 100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+  }
+
+  header .navigation li {
+    margin-left: 0;
+  }
+
+  header .navigation li a {
+    color: $lettersColor;
+    font-size: 1.6em;
+  }
+
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url("../../images/menu/boton-de-menu-de-tres-lineas-horizontales.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .menuToggle.active {
+    background-image: url("../../images/menu/close.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  header.sticky .menuToggle {
+    filter: invert(1);
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .banner .content h2 {
+    font-size: 3em;
+    color: #fff;
+  }
+
+  .customRow {
+    flex-direction: column;
+  }
+
+  .customRow .col50 {
+    position: relative;
+    width: 100%;
+  }
+
+  .customRow .col50 .imgBx {
+    height: 300px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner .content h2 {
+    font-size: 2.2em;
+    color: #fff;
+  }
+}
